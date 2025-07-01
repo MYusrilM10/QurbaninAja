@@ -1,0 +1,161 @@
+/* ====== General ====== */
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+}
+
+/* ====== Navbar ====== */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  margin: 0;
+  padding: 15px 20px;
+  height: 80px;
+  background-color: #0077a5;
+  box-shadow: none;
+}
+
+.navbar-brand {
+  color: #ffffff; /* Mengubah warna teks navbar brand menjadi putih */
+}
+
+.navbar-nav .nav-link {
+  color: #ffffff;
+  font-size: 1.2rem;
+}
+
+.navbar-nav .nav-link:hover {
+  background-color: #0077a5;
+}
+
+/* Navbar dropdown - styling untuk menu hamburger */
+.navbar-collapse {
+  background-color: #0077a5; /* Memberikan latar belakang yang lebih gelap agar teks putih lebih terlihat */
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: none; /* Efek bayangan untuk memberi kesan terangkat */
+}
+
+/* Styling navbar links */
+.navbar-nav .nav-link {
+  color: #ffffff !important; /* Teks putih untuk kontras dengan latar belakang */
+  font-size: 1.2rem;
+  text-align: center; /* Menyusun menu dalam satu baris */
+}
+
+/* Hover effect */
+.navbar-nav .nav-link:hover {
+  background-color: #0077a5;
+  color: #f0f0f0;
+}
+
+/* ====== Gallery Section ====== */
+.gallery-title {
+  font-weight: 600;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Cards */
+.card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+  border: none;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card-title {
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.card-text {
+  font-size: 0.95rem;
+}
+
+/* Card images */
+.card-img-top {
+  object-fit: cover;
+  height: 180px;
+}
+
+/* Spacing between cards */
+.row.g-4 > [class*="col-"] {
+  margin-bottom: 1.5rem;
+}
+
+/* ====== Accordion ====== */
+.accordion-item {
+  margin-bottom: 1rem;
+  border-radius: 6px;
+  overflow: hidden;
+  border: 1px solid #ddd;
+}
+
+.accordion-button {
+  font-weight: 600;
+  background-color: #f0f8ff;
+}
+
+.accordion-body {
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* ====== Alert Box ====== */
+.alert {
+  margin-top: 2rem;
+  font-size: 0.95rem;
+}
+
+/* ====== Footer ====== */
+.footer {
+  background-color: #0077a5;
+  color: white;
+  padding: 40px 0;
+}
+
+a {
+  color: white !important;
+  text-decoration: none; /* opsional: menghilangkan garis bawah */
+}
+
+a:hover {
+  color: #f0f0f0 !important; /* opsional: warna saat hover */
+}
+
+.footer .text-center {
+  font-size: 1rem;
+  margin-top: 20px;
+  padding-top: 10px;
+}
+
+/* ====== Responsive ====== */
+@media (max-width: 768px) {
+  .card-img-top {
+    height: 150px;
+  }
+
+  .gallery-title {
+    font-size: 1.6rem;
+  }
+
+  .card-title {
+    font-size: 1rem;
+  }
+
+  .card-text,
+  .accordion-body {
+    font-size: 0.9rem;
+  }
+
+  .navbar-brand {
+    font-size: 1.25rem;
+  }
+}
