@@ -1,14 +1,20 @@
-/* Menghapus margin dan padding default pada body dan html */
-html,
+/* Layout Structure */
 body {
+  background-color: #f1fff3;
   font-family: "Poppins", sans-serif;
   margin: 0;
   padding: 0;
-  width: 100%;
-  height: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
-/* Navbar Styling */
+.main-content {
+  flex: 1;
+  padding: 40px 20px;
+}
+
+/* Navbar Styling - Diambil dari kode awal */
 .navbar {
   position: sticky;
   top: 0;
@@ -21,7 +27,7 @@ body {
 }
 
 .navbar-brand {
-  color: #ffffff; /* Mengubah warna teks navbar brand menjadi putih */
+  color: #ffffff;
 }
 
 .navbar-nav .nav-link {
@@ -35,17 +41,17 @@ body {
 
 /* Navbar dropdown - styling untuk menu hamburger */
 .navbar-collapse {
-  background-color: #0077a5; /* Memberikan latar belakang yang lebih gelap agar teks putih lebih terlihat */
+  background-color: #0077a5;
   border-radius: 5px;
   padding: 10px;
-  box-shadow: none; /* Efek bayangan untuk memberi kesan terangkat */
+  box-shadow: none;
 }
 
 /* Styling navbar links */
 .navbar-nav .nav-link {
-  color: #ffffff !important; /* Teks putih untuk kontras dengan latar belakang */
+  color: #ffffff !important;
   font-size: 1.2rem;
-  text-align: center; /* Menyusun menu dalam satu baris */
+  text-align: center;
 }
 
 /* Hover effect */
@@ -54,63 +60,60 @@ body {
   color: #f0f0f0;
 }
 
-/* Hero Section Styling */
-.hero-section {
-  background: url("https://png.pngtree.com/background/20220731/original/pngtree-eid-al-adha-2022-background-picture-image_1911474.jpg")
-    no-repeat center center;
-  background-size: cover; /* Gambar menutupi seluruh area */
-  height: 100vh; /* Membuat tinggi section 100% dari tinggi layar */
-  padding: 0;
-  margin: 0;
-  text-align: center;
+/* Form Container */
+.container {
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  max-width: 850px;
+  margin: 20px auto;
 }
 
-.hero-text {
-  max-width: 600px;
-  text-align: left;
-  flex: 1 1 300px;
-  margin-top: 70px;
+.form-label i {
+  margin-right: 8px;
+  color: #28a745;
 }
 
-.hero-text h1 {
-  font-size: 3.5rem;
-  font-weight: 700;
-  color: #004d4d;
-}
-
-.hero-text p {
-  font-size: 1.25rem;
-}
-
-.btn-book {
-  padding: 10px 30px;
-  font-size: 1.2rem;
-  background-color: #008000;
-  color: #ffffff;
+.btn-hijau {
+  background-color: #28a745;
+  color: white;
+  width: 100%;
+  padding: 10px;
+  font-size: 1.1rem;
   border: none;
   border-radius: 5px;
-  text-transform: uppercase;
+  transition: background-color 0.3s;
 }
 
-/* Mengatur responsive layout */
+.btn-hijau:hover {
+  background-color: #218838;
+}
+
+/* Responsive Adjustments */
 @media (max-width: 768px) {
-  .hero-section .container {
-    flex-direction: column;
-    text-align: center;
+  .main-content {
+    padding: 20px 15px;
   }
 
-  .hero-text {
-    text-align: center;
-    margin-bottom: 20px;
+  .container {
+    padding: 20px;
+    margin: 15px auto;
   }
 
   /* Mengatur tampilan menu untuk perangkat kecil */
   .navbar-nav {
-    flex-direction: column; /* Menata menu dropdown dalam kolom */
+    flex-direction: column;
   }
 
   .navbar-nav .nav-link {
     padding: 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  .btn-hijau {
+    font-size: 1rem;
   }
 }
 
