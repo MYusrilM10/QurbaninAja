@@ -44,9 +44,20 @@
   color: #f0f0f0;
 }
 
+html,
 body {
   background: linear-gradient(to right, #e3f2fd, #bbdefb);
-  font-family: "Segoe UI", sans-serif;
+  font-family: "Poppins", sans-serif;
+}
+
+html,
+body {
+  font-family: "Poppins", sans-serif !important; /* Force inherit */
+}
+
+.navbar,
+.navbar * {
+  font-family: inherit !important; /* Memaksa semua elemen navbar menggunakan Poppins */
 }
 
 .hero {

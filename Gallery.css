@@ -1,4 +1,5 @@
 /* ====== General ====== */
+html,
 body {
   font-family: "Poppins", sans-serif;
   background-color: #f9f9f9;
@@ -170,6 +171,11 @@ body {
 
 .footer-section a:hover {
   text-decoration: underline;
+}
+.footer-section h3,
+.footer-section p,
+.footer-section a {
+  font-weight: normal; /* atau 400 yang setara dengan normal */
 }
 
 .footer-bottom {
