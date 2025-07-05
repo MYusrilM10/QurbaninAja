@@ -1,6 +1,7 @@
 /* Layout Structure */
 body {
   background-color: #f1fff3;
+  color: #0077a5;
   font-family: "Poppins", sans-serif;
   margin: 0;
   padding: 0;
@@ -72,11 +73,11 @@ body {
 
 .form-label i {
   margin-right: 8px;
-  color: #28a745;
+  color: #000000;
 }
 
 .btn-hijau {
-  background-color: #28a745;
+  background-color: #0077a5;
   color: white;
   width: 100%;
   padding: 10px;
@@ -87,7 +88,10 @@ body {
 }
 
 .btn-hijau:hover {
-  background-color: #218838;
+  background-color: #adff2f;
+}
+.form-title-blue {
+  color: #0077a5 !important; /* Warna biru QurbaninAja */
 }
 
 /* Responsive Adjustments */
