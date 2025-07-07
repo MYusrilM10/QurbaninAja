@@ -29,7 +29,7 @@ body {
 }
 
 .navbar-brand {
-  color: #ffffff;
+  color: #ffffff; /* Mengubah warna teks navbar brand menjadi putih */
 }
 
 .navbar-nav .nav-link {
@@ -39,6 +39,27 @@ body {
 
 .navbar-nav .nav-link:hover {
   background-color: #0077a5;
+}
+
+/* Navbar dropdown - styling untuk menu hamburger */
+.navbar-collapse {
+  background-color: #0077a5; /* Memberikan latar belakang yang lebih gelap agar teks putih lebih terlihat */
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: none; /* Efek bayangan untuk memberi kesan terangkat */
+}
+
+/* Styling navbar links */
+.navbar-nav .nav-link {
+  color: #ffffff !important; /* Teks putih untuk kontras dengan latar belakang */
+  font-size: 1.2rem;
+  text-align: center; /* Menyusun menu dalam satu baris */
+}
+
+/* Hover effect */
+.navbar-nav .nav-link:hover {
+  background-color: #0077a5;
+  color: #f0f0f0;
 }
 
 /* Form Container */
