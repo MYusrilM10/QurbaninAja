@@ -86,12 +86,32 @@ body {
   height: 180px;
 }
 
+/* Card images */
+.card-img-top {
+  object-fit: cover;
+  height: auto; /* Mengubah height menjadi auto */
+  max-height: 180px; /* Tambahkan batasan max-height agar tetap proporsional */
+}
+
 /* Spacing between cards */
 .row.g-4 > [class*="col-"] {
   margin-bottom: 1.5rem;
 }
 
 /* ====== Accordion ====== */
+
+.accordion-button {
+  font-weight: 600;
+  background-color: #f0f8ff;
+  padding: 1rem 1.5rem; /* Menambah padding untuk lebih nyaman dilihat */
+}
+
+.accordion-body {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  padding: 1.25rem; /* Menambah padding untuk kenyamanan membaca */
+}
+
 .accordion-item {
   margin-bottom: 1rem;
   border-radius: 6px;
@@ -113,6 +133,13 @@ body {
 .alert {
   margin-top: 2rem;
   font-size: 0.95rem;
+}
+.alert {
+  margin-top: 2rem;
+  padding: 1rem;
+  font-size: 1rem; /* Mengatur ukuran font agar lebih nyaman dibaca */
+  border-radius: 5px;
+  text-align: center;
 }
 
 /* ====== Responsive ====== */
@@ -137,6 +164,24 @@ body {
   .navbar-brand {
     font-size: 1.25rem;
   }
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  margin-bottom: 2rem; /* Menambah margin bottom agar lebih rapi */
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  margin-bottom: 20px; /* Menambah margin bawah untuk footer */
 }
 
 .footer {
@@ -193,5 +238,33 @@ body {
 
   .footer-section {
     margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .card-img-top {
+    height: 150px;
+  }
+
+  .gallery-title {
+    font-size: 1.6rem;
+  }
+
+  .card-title {
+    font-size: 1rem;
+  }
+
+  .card-text,
+  .accordion-body {
+    font-size: 0.9rem;
+  }
+
+  .navbar-brand {
+    font-size: 1.25rem;
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 20px;
   }
 }
