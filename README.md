@@ -8,17 +8,13 @@ QurbaninAja adalah platform digital untuk memudahkan pelaksanaan ibadah qurban s
 
 - **Frontend**: Next.js (React Framework)
 - **Backend**: Express.js
-- **Database**: MySQL
 - **Styling**: Tailwind CSS
 
 ## Fitur Utama
 
 ✅ Pendaftaran dan autentikasi pengguna  
 ✅ Pemilihan hewan qurban (sapi, kambing, domba)  
-✅ Sistem pembayaran terintegrasi  
-✅ Pelacakan status qurban  
-✅ Sertifikat qurban digital  
-✅ Manajemen admin untuk pengelolaan qurban
+
 
 ## Cara Menjalankan Projek
 
@@ -35,46 +31,6 @@ QurbaninAja adalah platform digital untuk memudahkan pelaksanaan ibadah qurban s
 ```bash
 git clone https://github.com/MYusrilM10/QurbaninAja.git
 cd QurbaninAja
-```
-
-2. Install dependencies:
-
-```bash
-npm install
-# atau
-yarn install
-```
-
-3. Setup database:
-
-- Buat database MySQL baru
-- Import file SQL yang tersedia di `/database/qurbaninaja.sql`
-
-4. Konfigurasi environment:
-   Buat file `.env` berdasarkan template `.env.example` dan isi dengan konfigurasi yang sesuai.
-
-5. Jalankan aplikasi:
-
-```bash
-npm run dev
-# atau
-yarn dev
-```
-
-Aplikasi akan berjalan di `http://localhost:3000`
-
-## Struktur Direktori
-
-```
-├── public/            - Aset statis (gambar, font, dll)
-├── src/
-│   ├── components/    - Komponen React
-│   ├── pages/         - Halaman Next.js
-│   ├── styles/        - File CSS global
-│   ├── utils/         - Fungsi utilitas
-│   └── server/        - Backend Express.js
-├── database/          - Skema dan data SQL
-└── ...
 ```
 
 ## Kontribusi
