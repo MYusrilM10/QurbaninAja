@@ -21,7 +21,7 @@ body {
 }
 
 .navbar-brand {
-  color: #ffffff; /* Mengubah warna teks navbar brand menjadi putih */
+  color: #ffffff;
 }
 
 .navbar-nav .nav-link {
@@ -35,17 +35,17 @@ body {
 
 /* Navbar dropdown - styling untuk menu hamburger */
 .navbar-collapse {
-  background-color: #0077a5; /* Memberikan latar belakang yang lebih gelap agar teks putih lebih terlihat */
+  background-color: #0077a5;
   border-radius: 5px;
   padding: 10px;
-  box-shadow: none; /* Efek bayangan untuk memberi kesan terangkat */
+  box-shadow: none;
 }
 
 /* Styling navbar links */
 .navbar-nav .nav-link {
-  color: #ffffff !important; /* Teks putih untuk kontras dengan latar belakang */
+  color: #ffffff !important;
   font-size: 1.2rem;
-  text-align: center; /* Menyusun menu dalam satu baris */
+  text-align: center;
 }
 
 /* Hover effect */
@@ -58,8 +58,8 @@ body {
 .hero-section {
   background: url("https://png.pngtree.com/background/20220731/original/pngtree-eid-al-adha-2022-background-picture-image_1911474.jpg")
     no-repeat center center;
-  background-size: cover; /* Gambar menutupi seluruh area */
-  height: 100vh; /* Membuat tinggi section 100% dari tinggi layar */
+  background-size: cover;
+  height: 100vh;
   padding: 0;
   margin: 0;
   text-align: center;
@@ -92,28 +92,7 @@ body {
   text-transform: uppercase;
 }
 
-/* Mengatur responsive layout */
-@media (max-width: 768px) {
-  .hero-section .container {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .hero-text {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-
-  /* Mengatur tampilan menu untuk perangkat kecil */
-  .navbar-nav {
-    flex-direction: column; /* Menata menu dropdown dalam kolom */
-  }
-
-  .navbar-nav .nav-link {
-    padding: 10px;
-  }
-}
-
+/* Footer Styling */
 .footer {
   background-color: #0077a5;
   color: #ffffff;
@@ -155,13 +134,161 @@ body {
   border-top: 1px solid rgba(255, 255, 255, 0.2);
 }
 
+/* ========================================== */
+/* Responsive Adjustments (Tambahan Baru) */
+/* ========================================== */
+@media (max-width: 1200px) {
+  .hero-text h1 {
+    font-size: 3rem;
+  }
+
+  .hero-text h2 {
+    font-size: 1.8rem;
+  }
+
+  .hero-text h3 {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .hero-text {
+    margin-top: 50px;
+  }
+
+  .hero-text h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-text h2 {
+    font-size: 1.6rem;
+  }
+
+  .hero-text h3 {
+    font-size: 1.2rem;
+  }
+
+  .display-3 {
+    font-size: 2.5rem;
+  }
+}
+
 @media (max-width: 768px) {
+  .navbar {
+    height: auto;
+    padding: 10px 15px;
+  }
+
+  .hero-section {
+    height: auto;
+    padding: 80px 0;
+  }
+
+  .hero-text {
+    text-align: center;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+
+  .hero-text h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero-text h2 {
+    font-size: 1.4rem;
+  }
+
+  .hero-text h3 {
+    font-size: 1.1rem;
+  }
+
+  .container-fluid.pt-5.pb-5 {
+    padding-top: 30px !important;
+    padding-bottom: 30px !important;
+  }
+
+  .display-3 {
+    font-size: 2rem;
+  }
+
+  h4 {
+    font-size: 1rem;
+  }
+
+  h5 {
+    font-size: 0.9rem;
+  }
+
+  .fa-5x {
+    font-size: 3em !important;
+  }
+
   .footer-container {
     grid-template-columns: 1fr;
     gap: 20px;
   }
+}
 
-  .footer-section {
-    margin-bottom: 20px;
+@media (max-width: 576px) {
+  .hero-text h1 {
+    font-size: 1.8rem;
   }
+
+  .hero-text h2 {
+    font-size: 1.2rem;
+  }
+
+  .hero-text h3 {
+    font-size: 1rem;
+  }
+
+  .display-3 {
+    font-size: 1.6rem;
+  }
+
+  h4 {
+    font-size: 0.9rem;
+  }
+
+  h5 {
+    font-size: 0.8rem;
+  }
+
+  .fa-5x {
+    font-size: 2.5em !important;
+  }
+
+  .footer-section h3 {
+    font-size: 1rem;
+  }
+
+  .footer-section p,
+  .footer-section a {
+    font-size: 0.9rem;
+  }
+
+  .footer-bottom p {
+    font-size: 0.8rem;
+  }
+}
+
+/* Utility Classes untuk Responsif */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container,
+.container-fluid {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  line-height: 1.4;
 }
